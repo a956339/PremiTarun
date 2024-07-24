@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/svg-with-js.min.css" integrity="sha512-Nef0t+7fHdqSdK0uHHjJtjErpW8dJocz9vz2btqXLK9dVQEB3OdnufZ7lO4dQJJb1BvIhGScbk87vm5Z0OTezw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Play Audio</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* height: 100vh; */
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .hidden {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 1s ease-in-out;
+        }
+        .show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 10px;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        #translateButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <button id="translateButton">Translate to Hindi</button>
+    <button id="playButton">Click Me</button>
+    <div class="container">
+        
+        <div class="image-container hidden" id="imageContainer">
+            <img src="/111531292.png" alt="Girl Image 2">
+            <span class="heart"><i class="fa-solid fa-heart fa-beat-fade" style="color: #f90606;"></i></span>
+            <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Girl Image 3">
+        </div>
+
+        <div id="girlImage" class="hidden" style="padding: 100px;">
+            <h1 style="text-align: center;">Love story of Tarun</h1>
+            <p>
+                Once upon a time in a bustling city, there lived a young man named Tarun. Tarun was an ambitious and hardworking individual, known for his kindness and compassion. He lived a busy life, filled with work, friends, and hobbies, but one thing seemed to be missing: love.
+            </p>
+            <p>
+                One sunny afternoon, Tarun decided to take a walk in the city's beautiful central park. The park was a haven of tranquility amidst the city's chaos, filled with blooming flowers, tall trees, and the gentle sound of a nearby fountain. As he walked along a path lined with cherry blossoms, he noticed a young woman sitting on a bench, absorbed in a book.
+            </p>
+            <p>
+                Curiosity piqued, Tarun approached her and noticed the title of the book, a classic novel he had always loved. He couldn't resist striking up a conversation. "That's one of my favorite books," he said with a smile. The woman looked up, her eyes meeting his, and she smiled back. "It's mine too," she replied. Her name was P.
+            </p>
+            <p>
+                From that moment, a connection sparked between them. They talked for hours, sharing their thoughts on literature, life, and dreams. Tarun was captivated by P's intelligence, wit, and warmth. She was unlike anyone he had ever met. As the sun began to set, they exchanged numbers and promised to meet again.
+            </p>
+            <p>
+                Days turned into weeks, and Tarun and P's bond grew stronger with each passing day. They explored the city together, discovering hidden cafes, attending art exhibitions, and enjoying long walks in the park where they first met. Their conversations were endless, filled with laughter and deep reflections. They found comfort and joy in each other's company, and it wasn't long before they realized they were falling in love.
+            </p>
+            <p>
+                Tarun's friends noticed the change in him. He seemed happier, more vibrant, and full of life. They saw how P brought out the best in him, and they were thrilled for their friend. P's presence had a profound impact on Tarun, inspiring him to be more creative and adventurous.
+            </p>
+            <p>
+                One evening, Tarun decided to take P to a rooftop restaurant that overlooked the city skyline. The view was breathtaking, with twinkling lights stretching as far as the eye could see. As they enjoyed their dinner, Tarun felt a surge of emotion. He reached for P's hand and looked into her eyes. "P," he began, "meeting you has been the most incredible experience of my life. You've brought so much happiness and love into my world, and I can't imagine my life without you. I love you."
+            </p>
+            <p>
+                Tears welled up in P's eyes as she squeezed his hand. "I love you too, Tarun," she replied softly. "You've made me feel so cherished and understood. I'm so grateful for you."
+            </p>
+            <p>
+                From that moment on, their love story blossomed. They faced life's challenges together, supporting and encouraging each other every step of the way. Their love was a beautiful journey, filled with memorable moments and shared dreams. Tarun and P knew they were meant to be, and they cherished every moment they spent together.
+            </p>
+            <p>
+                Years later, Tarun proposed to P in the very park where they first met, under the cherry blossoms. She said yes, and they embarked on a new chapter of their lives as husband and wife. Their love story became an inspiration to those around them, a testament to the power of connection and the magic of finding one's soulmate.
+            </p>
+            <p>
+                And so, Tarun and P lived happily ever after, their hearts forever intertwined in a love that was truly meant to be.
+            </p>
+            
+        </div>
+    </div>
+    <audio id="audio" src="/WhatsApp Audio 2024-07-23 at 20.29.57_b5efcca9 (online-audio-converter.com).mp3"></audio>
+    
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            var girlImage = document.getElementById('girlImage');
+            var imageContainer = document.getElementById('imageContainer');
+            
+            audio.play();
+            girlImage.classList.add('show');
+            
+            setTimeout(function() {
+                imageContainer.classList.add('show');
+            }, 1000); // Delay showing the second image set by 1 second
+        });
+
+        document.getElementById('translateButton').addEventListener('click', function() {
+            var girlImage = document.getElementById('girlImage');
+            var paragraphs = girlImage.getElementsByTagName('p');
+            var title = girlImage.getElementsByTagName('h1')[0];
+
+            title.textContent = 'तरुण की प्रेम कहानी';
+            paragraphs[0].textContent = 'एक बार की बात है, एक व्यस्त शहर में तरुण नाम का एक युवा व्यक्ति रहता था। तरुण एक महत्वाकांक्षी और मेहनती व्यक्ति था, जिसे उसकी दयालुता और करुणा के लिए जाना जाता था। वह एक व्यस्त जीवन जीता था, जिसमें काम, दोस्त और शौक शामिल थे, लेकिन एक चीज गायब लग रही थी: प्रेम।';
+            paragraphs[1].textContent = 'एक धूप भरी दोपहर, तरुण ने शहर के खूबसूरत केंद्रीय पार्क में टहलने का फैसला किया। पार्क शहर की अफरा-तफरी के बीच शांति का एक आश्रय स्थल था, जो खिलते फूलों, ऊंचे पेड़ों और पास के फव्वारे की मधुर ध्वनि से भरा हुआ था। जैसे ही वह चेरी के फूलों से सजी एक पगडंडी पर चला, उसने देखा कि एक युवती एक बेंच पर बैठी है और एक किताब में तल्लीन है।';
+            paragraphs[2].textContent = 'जिज्ञासा जागृत हुई, तरुण ने उसके पास जाकर किताब के शीर्षक पर गौर किया, जो एक क्लासिक उपन्यास था जिसे वह हमेशा से पसंद करता था। वह बातचीत शुरू करने से खुद को रोक नहीं सका। "यह मेरी पसंदीदा किताबों में से एक है," उसने मुस्कान के साथ कहा। महिला ने ऊपर देखा, उसकी नजरें उसकी नजरों से मिलीं, और उसने मुस्कुराते हुए जवाब दिया। "यह मेरी भी है," उसने उत्तर दिया। उसका नाम पी था।';
+            paragraphs[3].textContent = 'उस क्षण से, उनके बीच एक संबंध स्थापित हो गया। उन्होंने घंटों तक बातचीत की, साहित्य, जीवन और सपनों पर अपने विचार साझा किए। तरुण पी की बुद्धिमत्ता, हाज़िरजवाबी और गर्मजोशी से मंत्रमुग्ध हो गया। वह ऐसी थी जैसे उसने पहले कभी किसी से नहीं मिली थी। जैसे-जैसे सूरज ढलने लगा, उन्होंने एक-दूसरे के नंबर लिए और फिर मिलने का वादा किया।';
+            paragraphs[4].textContent = 'दिन सप्ताहों में बदल गए, और तरुण और पी का बंधन हर गुजरते दिन के साथ मजबूत होता गया। उन्होंने एक साथ शहर का पता लगाया, छिपे हुए कैफे खोजे, कला प्रदर्शनियों में भाग लिया और उस पार्क में लंबी सैर का आनंद लिया जहां वे पहली बार मिले थे। उनकी बातचीत अंतहीन थी, हंसी और गहन विचारों से भरी हुई थी। उन्हें एक-दूसरे की कंपनी में आराम और खुशी मिली, और इसमें ज्यादा समय नहीं लगा जब उन्हें एहसास हुआ कि वे प्यार में पड़ रहे हैं।';
+            paragraphs[5].textContent = 'तरुण के दोस्तों ने उनमें आए बदलाव को देखा। वह खुशहाल, अधिक जीवंत और जीवन से भरपूर लग रहा था। उन्होंने देखा कि पी ने उनमें सर्वश्रेष्ठता लाई, और वे अपने दोस्त के लिए रोमांचित थे। पी की उपस्थिति का तरुण पर गहरा प्रभाव पड़ा, जिससे वह अधिक रचनात्मक और साहसी बन गया।';
+            paragraphs[6].textContent = 'एक शाम, तरुण ने पी को एक छत वाले रेस्तरां में ले जाने का फैसला किया, जो शहर के क्षितिज को देखता था। दृश्य मनमोहक था, जिसमें टिमटिमाती रोशनी जितनी दूर तक देखी जा सकती थी उतनी फैली हुई थी। जैसे ही उन्होंने अपना खाना खाया, तरुण को भावनाओं की लहर महसूस हुई। उसने पी का हाथ थाम लिया और उसकी आँखों में देखा। "पी," उसने शुरू किया, "तुमसे मिलना मेरे जीवन का सबसे अविश्वसनीय अनुभव रहा है। आपने मेरी दुनिया में इतनी खुशी और प्यार लाया है, और मैं आपके बिना अपने जीवन की कल्पना नहीं कर सकता। आई लव यू।';
+            paragraphs[7].textContent = 'पी की आँखों में आँसू आ गए जब उसने उसका हाथ दबाया। "मैं भी तुमसे प्यार करती हूँ, तरुण," उसने धीरे से उत्तर दिया। "आपने मुझे बहुत प्यार और समझदारी महसूस कराई है। मैं आपके लिए बहुत आभारी हूं।';
+            paragraphs[8].textContent = 'उस क्षण से, उनकी प्रेम कहानी खिल उठी। उन्होंने जीवन की चुनौतियों का एक साथ सामना किया, हर कदम पर एक-दूसरे का समर्थन और प्रोत्साहन किया। उनका प्यार एक खूबसूरत यात्रा थी, यादगार पलों और साझा सपनों से भरी हुई। तरुण और पी जानते थे कि वे एक-दूसरे के लिए बने हैं, और उन्होंने अपने साथ बिताए हर पल को संजोया।';
+            paragraphs[9].textContent = 'वर्षों बाद, तरुण ने उसी पार्क में चेरी के फूलों के नीचे पी को प्रपोज किया, जहां वे पहली बार मिले थे। उसने हां कह दिया, और उन्होंने अपने जीवन के एक नए अध्याय की शुरुआत पति और पत्नी के रूप में की। उनकी प्रेम कहानी उनके आसपास के लोगों के लिए प्रेरणा बन गई, संबंध की शक्ति और अपने साथी को खोजने के जादू का प्रमाण।';
+            paragraphs[10].textContent = 'और इस प्रकार, तरुण और पी खुशी-खुशी रहने लगे, उनके दिल एक सच्चे प्यार में हमेशा के लिए जुड़े रहे।';
+        });
+    </script>
+</body>
+</html>
